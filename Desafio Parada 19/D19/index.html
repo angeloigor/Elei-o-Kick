@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <link rel="icon" href="icons8-votação-64.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poetsen+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Eleição 2024</title>
+  </head>
+  <body>
+    <div class="votacao">
+      <h1>Votação</h1>
+      <form id="formularioVotacao">
+        <label>
+          <input type="radio" name="vote" value="Mariana Gomes" /> Mariana Gomes </label
+        ><br />
+        <label>
+          <input type="radio" name="vote" value="Igor Angelo" /> Igor Angelo </label
+        ><br />
+        <label>
+          <input type="radio" name="vote" value="Thalita Nunes" /> Thalita Nunes </label
+        ><br />
+        <label>
+          <input type="radio" name="vote" value="Juliana Lopes" /> Juliana Lopes </label
+        ><br />
+        <label>
+          <input type="radio" name="vote" value="Nulo/Branco" />
+          Nulo/Branco </label
+        ><br /><br />
+        
+      </form>
+      <button type="button" class="botao" onclick="submitVote()">Votar</button>
+      <div id="resultado"></div>
+      <h2>Mude a Cor de Fundo</h2>
+      <select id="bgColor" onchange="changeBackgroundColor()">
+        <option value="white">Branco</option>
+        <option value="lightsalmon">Salmão Claro</option>
+        <option value="lightgreen">Verde Claro</option>
+        <option value="lightpink">Rosa Claro</option>
+        <option value="lightgoldenrodyellow">Dourado</option>
+      </select>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>

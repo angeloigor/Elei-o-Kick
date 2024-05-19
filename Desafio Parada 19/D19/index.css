@@ -1,0 +1,50 @@
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: white;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.votacao {
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#formularioVotacao{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    font-weight: 400;
+}
+
+h1, h2 {
+    margin-bottom: 20px;
+}
+
+.botao{
+    width: 115px;
+    height: 40px;
+    background-color: green;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+
+#resultado {
+    margin-top: 20px;
+    font-size: 1.2em;
+    font-weight: 700;
+    color: rgb(128, 0, 0);
+}
